@@ -1,0 +1,63 @@
+SPDXVersion: SPDX-2.1
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: dot
+DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-08c98410-65fd-4de4-ac34-670f5959d996
+Creator: Person: Anonymous ()
+Creator: Organization: Anonymous ()
+Creator: Tool: reuse-1.0.0
+Created: 2023-05-20T04:41:31Z
+CreatorComment: <text>This document was created automatically using available reuse information consistent with REUSE.</text>
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-9340c6c515ce801d496d9bffc4012cbb
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5b7975b5af491833e02953ae99a196ac
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-26575f373146cda8724c99b32345e766
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-16fce5797fa2d49892db4ed2010aeb1f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-40d0c5bdd3a693e990ec3cbcd044f42a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-4a148fa5b39730e9b11d5a29f3d9af18
+
+FileName: ./.IGNORE_THIS_FILE_REUSE_LICENSE_CHEAT.txt
+SPDXID: SPDXRef-9340c6c515ce801d496d9bffc4012cbb
+FileChecksum: SHA1: 3b7f9055382f3b1954d880869af8d35baed5eadd
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: 0BSD
+LicenseInfoInFile: CC0-1.0
+LicenseInfoInFile: MPL-2.0
+LicenseInfoInFile: PSF-2.0
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./README.md
+SPDXID: SPDXRef-5b7975b5af491833e02953ae99a196ac
+FileChecksum: SHA1: 110288917f02ca09782d961a7044a962e3e3deae
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./depend-info.txt
+SPDXID: SPDXRef-26575f373146cda8724c99b32345e766
+FileChecksum: SHA1: 83e8a8ef2c2570706fc1b664d3016006d7e7f749
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: CC0-1.0
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./dot.py
+SPDXID: SPDXRef-16fce5797fa2d49892db4ed2010aeb1f
+FileChecksum: SHA1: 7485e16faf6dd6ed4c3b0909c3c8bc322d64a8ba
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./poetry.lock
+SPDXID: SPDXRef-40d0c5bdd3a693e990ec3cbcd044f42a
+FileChecksum: SHA1: 2833509a25f2afc58877d29a4c2924dc890e2fd9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: CC0-1.0
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./pyproject.toml
+SPDXID: SPDXRef-4a148fa5b39730e9b11d5a29f3d9af18
+FileChecksum: SHA1: 3f7fa5defb17cb2fdf4570802d6fe9d38e6b1124
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: CC0-1.0
+FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>

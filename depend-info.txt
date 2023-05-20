@@ -1,0 +1,10 @@
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com>
+SPDX-License-Identifier: CC0-1.0
+
+Python:
+  SOURCE CODE = https://github.com/python/cpython
+  LICENSE = https://github.com/python/cpython/blob/main/LICENSE
+
+argopt:
+  SOURCE CODE = https://github.com/casperdcl/argopt
+  LICENSE = https://spdx.org/licenses/MPL-2.0.html
