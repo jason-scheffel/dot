@@ -92,10 +92,14 @@ This program requires, or optionally 'requires' the following software:
 
 <center>
 
-| Software   | License          | Type           |
-| :--------- | :--------------- | :------------- |
-| Python\*   | 0BSD AND PSF-2.0 | Program        |
-| argopt\*\* | MPL-2.0          | Python Package |
+| Software             | License          | Type                      |
+| :------------------- | :--------------- | :------------------------ |
+| Python\*             | 0BSD AND PSF-2.0 | Program                   |
+| argopt\*\*           | MPL-2.0          | Python Package            |
+| rich\*\*             | MIT              | Python Package            |
+| mdurl\*\*\*          | MIT              | Python Transitive Package |
+| markdown-it-py\*\*\* | MIT              | Python Transitive Package |
+| Pygments\*\*\*       | BSD-2-Clause     | Python Transitive Package |
 
 </center>
 

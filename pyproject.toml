@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 argopt = "^0.8.2"
+rich = "^13.3.5"
 
 
 [build-system]
