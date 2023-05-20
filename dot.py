@@ -24,3 +24,15 @@ import subprocess
 import time
 
 import argopt
+
+
+def run(cmd: str) -> dict[str, str | int]:
+    cmd_out = subprocess.run(
+        cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
+    )
+
+    return {
+        "stdout": cmd_out.stdout,
+        "stderr": cmd_out.stderr,
+        "returncode": cmd_out.returncode,
+    }
