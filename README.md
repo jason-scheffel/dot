@@ -36,7 +36,22 @@ right now.
 dot
 </h3>
 
-dot is my dotfiles management tool.
+dot is my dotfiles management tool. Allows you to sync your dotfiles with a
+specific dotfiles dir, which can be tracked with git too. Also, allows you to
+sync your dotfiles in reverse for installing them.
+
+dot also gives some control on how you sync; particularly, if you have a folder
+filled with scripts and you want to keep a copy of them in a folder in PATH.
+dot allows you to quickly keep the scripts in PATH updated with your scripts
+folder.
+
+dot, finally, allows you to call other scripts, which may help with installing
+your dotfiles.
+
+dot is not intended to replace programs like GNU Stow, Ansible Playbook, and
+yadm. You should not use this program with expections that it will work, if you
+choose to use dot, however, you should read the program---~/dot.py is the
+entire program. I do not plan to, or will, thoroughly test this program.
 
 <!-- TABLE OF CONTENTS -->
 
