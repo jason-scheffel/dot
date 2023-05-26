@@ -39,6 +39,13 @@ def run(cmd: str) -> dict[str, str | int]:
     }
 
 
+def yeet_metadata(file_path: str) -> None:
+    """
+    Given a file, remove all metadata from it.
+    """
+    pass
+
+
 def main(args: Namespace) -> None:
     pass
 
