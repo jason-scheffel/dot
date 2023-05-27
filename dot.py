@@ -46,6 +46,22 @@ def yeet_metadata(file_path: str) -> None:
     pass
 
 
+def add_file(file_path: str) -> None:
+    pass
+
+
+def remove_file(file_path: str) -> None:
+    pass
+
+
+def add_folder(folder_path: str) -> None:
+    pass
+
+
+def remove_folder(folder_path: str) -> None:
+    pass
+
+
 def main(args: Namespace) -> None:
     pass
 
