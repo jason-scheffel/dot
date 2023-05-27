@@ -76,6 +76,11 @@ def main(args: Namespace) -> None:
     pass
 
 
+def assert_dependencies(args: Namespace) -> None:
+    if args.no_dependencies_check:
+        return
+
+
 def docstring() -> str:
     return """Hello
 
