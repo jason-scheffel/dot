@@ -46,6 +46,16 @@ def yeet_metadata(file_path: str) -> None:
     pass
 
 
+def get_stem(file_path: str) -> str:
+    """
+    Given a file or dir path, return the stem of the path.
+
+    For example, /home/usr/file.txt would return /home/usr.
+    """
+
+    return os.path.dirname(file_path)
+
+
 def add_file(file_path: str) -> None:
     pass
 
