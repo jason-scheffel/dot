@@ -75,7 +75,7 @@ def init(args: argparse.Namespace) -> None:
     # make dotfiles ignore file
     dotfiles_ignore_file_name = ".dotfilesignore"
     dotfiles_ignore_file_path = os.path.join(
-        args.dotfiles_repo_path, dotfiles_ignore_file_name
+        args.dotfiles_repo, dotfiles_ignore_file_name
     )
 
     open(dotfiles_ignore_file_path, "w").close()
