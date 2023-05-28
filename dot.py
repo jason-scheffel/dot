@@ -151,9 +151,19 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     sub_parser_add.add_argument(
-        "dotfiles_repo",
+        "-i",
+        "--ignore_file",
         type=str,
-        help="The path to the dotfiles repo.",
+        help="Add a specific file to ignore.",
+        default=None,
+    )
+
+    sub_parser_add.add_argument(
+        "-I",
+        "--ignore_folder",
+        type=str,
+        help="Add a specific folder to ignore.",
+        default=None,
     )
 
     # 'remove' subcommand
