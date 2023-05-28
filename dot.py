@@ -45,19 +45,27 @@ def get_stem(file_path: str) -> str:
     return os.path.dirname(file_path)
 
 
-def add_file(file_path: str) -> None:
+def add(args: argparse.Namespace) -> None:
     pass
 
 
-def remove_file(file_path: str) -> None:
+def remove(args: argparse.Namespace) -> None:
     pass
 
 
-def add_folder(folder_path: str) -> None:
+def ignore(args: argparse.Namespace) -> None:
     pass
 
 
-def remove_folder(folder_path: str) -> None:
+def install(args: argparse.Namespace) -> None:
+    pass
+
+
+def sync(args: argparse.Namespace) -> None:
+    pass
+
+
+def init(args: argparse.Namespace) -> None:
     pass
 
 
