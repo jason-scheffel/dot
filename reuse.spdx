@@ -2,11 +2,11 @@ SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: dot
-DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-46a5d26f-352a-479d-be0a-055f2ca1868b
+DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-e3845e1c-5530-43bf-ad23-f97fb92b2f80
 Creator: Person: Anonymous ()
 Creator: Organization: Anonymous ()
 Creator: Tool: reuse-1.0.0
-Created: 2023-05-28T21:45:30Z
+Created: 2023-05-28T21:48:56Z
 CreatorComment: <text>This document was created automatically using available reuse information consistent with REUSE.</text>
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-5abdcab6e673472d2e882cc58d061859
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-cb8807efe189f81b478099443f9edae3
