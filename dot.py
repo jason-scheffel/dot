@@ -150,20 +150,30 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         help="The file or folder to add to the dotfiles repo.",
     )
 
-    sub_parser_add.add_argument(
-        "-i",
-        "--ignore_file",
-        type=str,
-        help="Add a specific file to ignore.",
-        default=None,
+    # 'ignore' subcommand
+    sub_parser_ignore = subparsers.add_parser(
+        "ignore",
+        description="Add a file or folder to the ignore list.",
+        help="Add a file or folder to the ignore list.",
+        formatter_class=CustomFormatter,
     )
 
-    sub_parser_add.add_argument(
-        "-I",
-        "--ignore_folder",
+    sub_parser_ignore.add_argument(
+        "type",
+        choices=["file", "folder"],
+        help="The type of file to ignore.",
+    )
+
+    sub_parser_ignore.add_argument(
+        "file_or_folder",
         type=str,
-        help="Add a specific folder to ignore.",
-        default=None,
+        help="The file or folder to ignore.",
+    )
+
+    sub_parser_ignore.add_argument(
+        "dotfiles_repo",
+        type=str,
+        help="The path to the dotfiles repo.",
     )
 
     # 'remove' subcommand
