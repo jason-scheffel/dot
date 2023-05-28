@@ -263,6 +263,36 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         default=True,
     )
 
+    # 'sync' subcommand
+    sub_parser_sync = subparsers.add_parser(
+        "sync",
+        description="Sync the dotfiles repo.",
+        help="Sync the dotfiles repo.",
+        formatter_class=CustomFormatter,
+    )
+
+    sub_parser_sync.add_argument(
+        "dotfiles_repo",
+        type=str,
+        help="The path to the dotfiles repo.",
+    )
+
+    sub_parser_sync.add_argument(
+        "-p",
+        "--progress",
+        action="store_true",
+        help="Show progress bar.",
+        default=True,
+    )
+
+    sub_parser_sync.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Show verbose output.",
+        default=True,
+    )
+
     arguments = parser.parse_args()
 
     if arguments.no_epilog:
