@@ -71,17 +71,17 @@ def init(args: argparse.Namespace) -> None:
 
 def main(args: argparse.Namespace) -> None:
     if args.add:
-        pass
+        add(args)
     elif args.remove:
-        pass
+        remove(args)
     elif args.ignore:
-        pass
+        ignore(args)
     elif args.install:
-        pass
+        install(args)
     elif args.sync:
-        pass
+        sync(args)
     elif args.init:
-        pass
+        init(args)
 
 
 def assert_dependencies(args: argparse.Namespace) -> None:
