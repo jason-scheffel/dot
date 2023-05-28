@@ -183,6 +183,20 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         help="The path to the dotfiles repo.",
     )
 
+    # 'install' subcommand
+    sub_parser_install = subparsers.add_parser(
+        "install",
+        description="Install the dotfiles repo.",
+        help="Install the dotfiles repo.",
+        formatter_class=CustomFormatter,
+    )
+
+    sub_parser_install.add_argument(
+        "dotfiles_repo",
+        type=str,
+        help="The path to the dotfiles repo.",
+    )
+
     arguments = parser.parse_args()
 
     if arguments.examples:
@@ -195,6 +209,9 @@ dot.py add ~/.xinitrc /foo/bar/dotfiles
 
 dot.py remove ~/.xinitrc /foo/bar/dotfiles
 - Removes the file, ~/.xinitrc, from the dotfiles repo.
+
+dot.py install /foo/bar/dotfiles
+- This will install the dotfiles in /foo/bar/dotfiles to the system.
 """
         print(examples_text)
         exit(0)
