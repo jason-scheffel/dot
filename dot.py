@@ -163,6 +163,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         help="The file or folder to add to the dotfiles repo.",
     )
 
+    sub_parser_add.add_argument(
+        "dotfiles_repo",
+        type=str,
+        help="The path to the dotfiles repo.",
+    )
+
     # 'ignore' subcommand
     sub_parser_ignore = subparsers.add_parser(
         "ignore",
