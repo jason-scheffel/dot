@@ -23,7 +23,7 @@ import subprocess
 import time
 
 
-def run(cmd: str) -> dict[str, str | int]:
+def run(cmd: list[str]) -> dict[str, str | int]:
     cmd_out = subprocess.run(
         cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True
     )
@@ -80,8 +80,7 @@ def init(args: argparse.Namespace) -> None:
 
     open(dotfiles_ignore_file_path, "w").close()
 
-    # init git repo
-    run("git init") if args.git else None
+    run(["git", "init"]) if not args.no_git_init else None
 
 
 def main(args: argparse.Namespace) -> None:
