@@ -172,6 +172,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     sub_parser_ignore.add_argument(
+        "action",
+        choices=["add", "remove"],
+        help="The action to perform.",
+    )
+
+    sub_parser_ignore.add_argument(
         "type",
         choices=["file", "folder"],
         help="The type of file to ignore.",
@@ -259,11 +265,14 @@ dot.py remove ~/.xinitrc /foo/bar/dotfiles
 dot.py install /foo/bar/dotfiles
 - This will install the dotfiles in /foo/bar/dotfiles to the system.
 
-dot.py ignore file ~/.config/nvim/plugin/packer_compiled.lua /foo/bar/dotfiles
+dot.py ignore add file /nvim/plugin/packer_compiled.lua /foo/bar/dotfiles
 - This will, in the dotfiles repo, ignore the above file.
 
-dot.py ignore folder ~/.config/idk/download/images /foo/bar/dotfiles
+dot.py ignore add folder ~/.config/idk/download/images /foo/bar/dotfiles
 - This will, in the dotfiles repo, ignore the above folder.
+
+dot.py ignore remove file /nvim/plugin/packer_compiled.lua /foo/bar/dotfiles
+- This will, in the dotfiles repo, stop ignoring the above file.
 
 {'*'*79}
 * END EXAMPLES                                                                *
