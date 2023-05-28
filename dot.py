@@ -74,7 +74,7 @@ def init(args: argparse.Namespace) -> None:
         exit(1)
 
     # make dotfiles conf file
-    dot_conf_file_name = ".dotconf"
+    dot_conf_file_name = ".dotconf.json"
     dot_conf_file_path = os.path.join(args.dotfiles_repo, dot_conf_file_name)
 
     open(dot_conf_file_path, "w").close()
