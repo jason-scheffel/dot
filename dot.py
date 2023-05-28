@@ -378,6 +378,33 @@ dot.py ignore remove file /nvim/plugin/packer_compiled.lua /foo/bar/dotfiles
     return arguments
 
 
+def check_arguments(args: argparse.Namespace) -> None:
+    # check 'add'
+    if args.sub_command == "add":
+        if not os.path.exists(args.file_or_folder):
+            print(f"File or folder does not exist: {args.file_or_folder}")
+            exit(1)
+
+        if not os.path.exists(args.dotfiles_repo):
+            print(f"Dotfiles repo does not exist: {args.dotfiles_repo}")
+            exit(1)
+
+    # check 'remove'
+    if args.sub_command == "remove":
+        file_path_in_dotfiles_repo = os.path.join(
+            args.dotfiles_repo, args.file_or_folder
+        )
+        if not os.path.exists(file_path_in_dotfiles_repo):
+            print(
+                f"File or folder does not exist in dotfiles repo: {file_path_in_dotfiles_repo}"  # noqa: E501
+            )
+            exit(1)
+
+        if not os.path.exists(args.dotfiles_repo):
+            print(f"Dotfiles repo does not exist: {args.dotfiles_repo}")
+            exit(1)
+
+
 if __name__ == "__main__":
     arguments = parse_args()
     main(arguments)
