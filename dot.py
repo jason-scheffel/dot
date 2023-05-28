@@ -12,7 +12,6 @@ later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
 WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
 PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
-
 You should have received a copy of the GNU Affero General Public License along
 with this program. If not, see <http://www.gnu.org/licenses/>.
 """
@@ -91,6 +90,11 @@ class CustomFormatter(
 def parse_args() -> argparse.Namespace:
     epilog = """
 -------------------------------------------------------------------------------
+Please the following messgae. I understand, however, that you may not wish to
+keep seeing the message. If that is the case, you may run this program with the
+'-H' flag to hide the message. '-H' is the same as '-h' except that it hides
+the message.
+
 This program requires, or optionally 'requires' other software.
 
 Such software is listed in the README.md file that accompanies this program;
@@ -126,6 +130,15 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         "--examples",
         action="store_true",
         help="show examples of how to use this program and exit",
+        default=False,
+    )
+
+    # show help without epilog
+    parser.add_argument(
+        "-H",
+        "--no-epilog",
+        action="store_true",
+        help="show help without epilog",
         default=False,
     )
 
@@ -227,6 +240,10 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     arguments = parser.parse_args()
+
+    if arguments.no_epilog:
+        parser.epilog = None
+        print(parser.format_help())
 
     if arguments.examples:
         examples_text = f"""{'*'*79}
