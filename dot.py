@@ -141,7 +141,6 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         description="valid subcommands",
         help="Do 'dot.py <subcommand> -h' for help on a subcommand.",
         dest="subcommand",
-        required=True,
     )
 
     # 'add' subcommand
@@ -158,6 +157,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         help="The file or folder to add to the dotfiles repo.",
     )
 
+    sub_parser_add.add_argument(
+        "dotfiles_repo",
+        type=str,
+        help="The path to the dotfiles repo.",
+    )
+
     # 'remove' subcommand
     sub_parser_remove = subparsers.add_parser(
         "remove",
@@ -172,7 +177,28 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         help="The file or folder to remove from the dotfiles repo.",
     )
 
+    sub_parser_remove.add_argument(
+        "dotfiles_repo",
+        type=str,
+        help="The path to the dotfiles repo.",
+    )
+
     arguments = parser.parse_args()
+
+    if arguments.examples:
+        examples_text = f"""{'*'*79}
+* EXAMPLES                                                                    *
+{'*'*79}
+
+dot.py add ~/.xinitrc /foo/bar/dotfiles
+- Adds the file, ~/.xinitrc, to the dotfiles repo.
+
+dot.py remove ~/.xinitrc /foo/bar/dotfiles
+- Removes the file, ~/.xinitrc, from the dotfiles repo.
+"""
+        print(examples_text)
+        exit(0)
+
     return arguments
 
 
