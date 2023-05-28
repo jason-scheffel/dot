@@ -313,7 +313,6 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         action="store_true",
         default=False,
         help="Do not initialize a git repo.",
-        description="Do not initialize a git repo.",
     )
 
     arguments = parser.parse_args()
