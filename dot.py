@@ -81,7 +81,7 @@ def init(args: argparse.Namespace) -> None:
     open(dotfiles_ignore_file_path, "w").close()
 
     # init git repo
-    run("git init")
+    run("git init") if args.git else None
 
 
 def main(args: argparse.Namespace) -> None:
