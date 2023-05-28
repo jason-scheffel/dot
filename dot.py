@@ -158,6 +158,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     sub_parser_add.add_argument(
+        "type",
+        choices=["file", "folder"],
+        help="The type of file to add.",
+    )
+
+    sub_parser_add.add_argument(
         "file_or_folder",
         type=str,
         help="The file or folder to add to the dotfiles repo.",
@@ -207,6 +213,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         description="Remove a file or folder from the dotfiles repo.",
         help="Remove a file or folder from the dotfiles repo.",
         formatter_class=CustomFormatter,
+    )
+
+    sub_parser_remove.add_argument(
+        "type",
+        choices=["file", "folder"],
+        help="The type of file to add.",
     )
 
     sub_parser_remove.add_argument(
