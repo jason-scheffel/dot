@@ -84,6 +84,13 @@ class CustomFormatter(
     argparse.ArgumentDefaultsHelpFormatter,
     argparse.RawDescriptionHelpFormatter,
 ):
+    """
+    This formatter does the following:
+        - Uses the default help formatter
+        - Uses the raw description formatter
+        - Sets the width to 79
+    """
+
     def __init__(self, prog):
         super().__init__(prog, width=79)
 
