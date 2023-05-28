@@ -297,6 +297,29 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         default=True,
     )
 
+    # 'init' subcommand
+    sub_parser_init = subparsers.add_parser(
+        "init",
+        description="Initialize the dotfiles repo.",
+        help="Initialize the dotfiles repo.",
+        formatter_class=CustomFormatter,
+    )
+
+    sub_parser_init.add_argument(
+        "dotfiles_repo",
+        type=str,
+        help="The path to the dotfiles repo.",
+        default=".",
+    )
+
+    sub_parser_init.add_argument(
+        "--no-git",
+        action="store_true",
+        default=False,
+        help="Do not initialize a git repo.",
+        description="Do not initialize a git repo.",
+    )
+
     arguments = parser.parse_args()
 
     if arguments.no_epilog:
