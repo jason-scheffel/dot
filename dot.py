@@ -370,6 +370,14 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     sub_parser_init.add_argument(
+        "-s",
+        "--signature",
+        type=str,
+        help="The signature to use for git commits.",
+        default=None,
+    )
+
+    sub_parser_init.add_argument(
         "--no-git-init",
         action="store_true",
         default=False,
