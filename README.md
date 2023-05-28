@@ -105,6 +105,10 @@ program.
 
 This program requires, or optionally 'requires' the following software:
 
+Note, this does not mean that this program can not be used without such
+software; for instance, this program may include a Makefile to install itself,
+but you need not be forced to use it.
+
 <center>
 
 | Software             | License          | Type                      |

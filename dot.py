@@ -97,6 +97,10 @@ the message.
 
 This program requires, or optionally 'requires' other software.
 
+Note, this does not mean that this program can not be used without such
+software; for instance, this program may include a Makefile to install itself,
+but you need not be forced to use it.
+
 Such software is listed in the README.md file that accompanies this program;
 additionally, a copy of the said file can be found at:
 <https://git.sr.ht/~jason-scheffel/dot>.
