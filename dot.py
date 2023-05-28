@@ -38,13 +38,6 @@ def run(cmd: str) -> dict[str, str | int]:
     }
 
 
-def yeet_metadata(file_path: str) -> None:
-    """
-    Given a file, remove all metadata from it.
-    """
-    pass
-
-
 def get_stem(file_path: str) -> str:
     """
     Given a file or dir path, return the stem of the path.
