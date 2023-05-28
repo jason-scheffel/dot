@@ -5,10 +5,6 @@ Python:
   SOURCE CODE = https://github.com/python/cpython
   LICENSE = https://github.com/python/cpython/blob/main/LICENSE
 
-argopt:
-  SOURCE CODE = https://github.com/casperdcl/argopt
-  LICENSE = https://spdx.org/licenses/MPL-2.0.html
-
 rich:
   SOURCE CODE = https://github.com/Textualize/rich
   LICENSE = https://spdx.org/licenses/MIT.html

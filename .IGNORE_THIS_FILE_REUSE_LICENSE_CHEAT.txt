@@ -21,5 +21,4 @@ SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com>
 SPDX-License-Identifier: 0BSD
 SPDX-License-Identifier: MIT
 SPDX-License-Identifier: BSD-2-Clause
-SPDX-License-Identifier: MPL-2.0
 SPDX-License-Identifier: PSF-2.0
