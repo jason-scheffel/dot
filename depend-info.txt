@@ -5,22 +5,6 @@ Python:
   SOURCE CODE = https://github.com/python/cpython
   LICENSE = https://github.com/python/cpython/blob/main/LICENSE
 
-rich:
-  SOURCE CODE = https://github.com/Textualize/rich
-  LICENSE = https://spdx.org/licenses/MIT.html
-
-mdurl:
-  SOURCE CODE = https://github.com/markdown-it/mdurl
-  LICENSE = https://spdx.org/licenses/MIT.html
-
-markdown-it-py:
-  SOURCE CODE = https://github.com/markdown-it/markdown-it
-  LICENSE = https://spdx.org/licenses/MIT.html
-
-Pygments:
-  SOURCE CODE = https://github.com/pygments/pygments
-  LICENSE = https://spdx.org/licenses/BSD-2-Clause.html
-
 Make:
   SOURCE CODE = https://git.savannah.gnu.org/cgit/make.git
   LICENSE = https://spdx.org/licenses/GPL-3.0-or-later.html

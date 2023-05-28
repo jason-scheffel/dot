@@ -115,10 +115,6 @@ but you need not be forced to use it.
 | :------------------- | :--------------- | :------------------------ |
 | Python\*             | 0BSD AND PSF-2.0 | Program                   |
 | Make                 | GPL-3.0-or-later | Program                   |
-| rich\*\*             | MIT              | Python Package            |
-| mdurl\*\*\*          | MIT              | Python Transitive Package |
-| markdown-it-py\*\*\* | MIT              | Python Transitive Package |
-| Pygments\*\*\*       | BSD-2-Clause     | Python Transitive Package |
 
 </center>
 
