@@ -179,6 +179,13 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         help="The path to the dotfiles repo.",
     )
 
+    sub_parser_add.add_argument(
+        "--no-git",
+        action="store_true",
+        help="Do not run git commands.",
+        default=False,
+    )
+
     # 'ignore' subcommand
     sub_parser_ignore = subparsers.add_parser(
         "ignore",
@@ -211,6 +218,13 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         help="The path to the dotfiles repo.",
     )
 
+    sub_parser_ignore.add_argument(
+        "--no-git",
+        action="store_true",
+        help="Do not run git commands.",
+        default=False,
+    )
+
     # 'remove' subcommand
     sub_parser_remove = subparsers.add_parser(
         "remove",
@@ -235,6 +249,12 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         "dotfiles_repo",
         type=str,
         help="The path to the dotfiles repo.",
+    )
+    sub_parser_remove.add_argument(
+        "--no-git",
+        action="store_true",
+        help="Do not run git commands.",
+        default=False,
     )
 
     # 'install' subcommand
@@ -293,6 +313,13 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         default=False,
     )
 
+    sub_parser_sync.add_argument(
+        "--no-git",
+        action="store_true",
+        default=False,
+        help="Do not run git commands.",
+    )
+
     # 'init' subcommand
     sub_parser_init = subparsers.add_parser(
         "init",
@@ -309,7 +336,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     sub_parser_init.add_argument(
-        "--no-git",
+        "--no-git-init",
         action="store_true",
         default=False,
         help="Do not initialize a git repo.",
