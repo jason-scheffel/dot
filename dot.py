@@ -66,7 +66,22 @@ def sync(args: argparse.Namespace) -> None:
 
 
 def init(args: argparse.Namespace) -> None:
-    pass
+    if os.listdir():
+        print("The current folder is not empty.")
+        print("This program assumes that you are in an empty folder.")
+        print("The program will now exit.")
+        exit(1)
+
+    # make dotfiles ignore file
+    dotfiles_ignore_file_name = ".dotfilesignore"
+    dotfiles_ignore_file_path = os.path.join(
+        args.dotfiles_repo_path, dotfiles_ignore_file_name
+    )
+
+    open(dotfiles_ignore_file_path, "w").close()
+
+    # init git repo
+    run("git init")
 
 
 def main(args: argparse.Namespace) -> None:
