@@ -84,7 +84,8 @@ class CustomFormatter(
     argparse.ArgumentDefaultsHelpFormatter,
     argparse.RawDescriptionHelpFormatter,
 ):
-    pass
+    def __init__(self, prog):
+        super().__init__(prog, width=79)
 
 
 def parse_args() -> argparse.Namespace:
@@ -124,7 +125,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         "-e",
         "--examples",
         action="store_true",
-        help="Show examples of how to use this program and exit.",
+        help="show examples of how to use this program and exit",
         default=False,
     )
 
