@@ -72,13 +72,11 @@ def init(args: argparse.Namespace) -> None:
         print("The program will now exit.")
         exit(1)
 
-    # make dotfiles ignore file
-    dotfiles_ignore_file_name = ".dotfilesignore"
-    dotfiles_ignore_file_path = os.path.join(
-        args.dotfiles_repo, dotfiles_ignore_file_name
-    )
+    # make dotfiles conf file
+    dot_conf_file_name = ".dotconf"
+    dot_conf_file_path = os.path.join(args.dotfiles_repo, dot_conf_file_name)
 
-    open(dotfiles_ignore_file_path, "w").close()
+    open(dot_conf_file_path, "w").close()
 
     if args.no_git_init:
         return
