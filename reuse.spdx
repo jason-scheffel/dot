@@ -2,48 +2,58 @@ SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: dot
-DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-611ad912-b9e4-47cd-97b3-bd6a7baa930d
+DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-40137414-1a42-4702-b9ff-f32c309c0f99
 Creator: Person: Anonymous ()
 Creator: Organization: Anonymous ()
 Creator: Tool: reuse-1.0.0
-Created: 2023-05-28T19:56:04Z
+Created: 2023-05-28T20:45:47Z
 CreatorComment: <text>This document was created automatically using available reuse information consistent with REUSE.</text>
-Relationship: SPDXRef-DOCUMENT describes SPDXRef-ace6543d6bc57ed9705fa859c46a8c39
-Relationship: SPDXRef-DOCUMENT describes SPDXRef-3d8e9cdfd42a2915ac612bc51a91ef45
-Relationship: SPDXRef-DOCUMENT describes SPDXRef-1d3dfc836f7ece2122c7df3e14d6baf2
-Relationship: SPDXRef-DOCUMENT describes SPDXRef-23e1d2342b74d2f89a9b88a6ec589ddb
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5abdcab6e673472d2e882cc58d061859
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d17b2784767cfc781ab1814652d5177e
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-d21c699b7cbe92856c03a1822717978c
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-5150f4fca3b333a29ef72cdea6532860
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-0279584e425c83d47d4d54ab8328f789
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-82a9015d52fef96115d5f24ff727ab13
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-297f60e9d53c41b899787c36a0ed3cee
 
 FileName: ./.IGNORE_THIS_FILE_REUSE_LICENSE_CHEAT.txt
-SPDXID: SPDXRef-ace6543d6bc57ed9705fa859c46a8c39
-FileChecksum: SHA1: 2e017aaf491faf07f7cad5b442659e115392ca2f
+SPDXID: SPDXRef-5abdcab6e673472d2e882cc58d061859
+FileChecksum: SHA1: 23741f394629c075e2f8b55568565f7eb9e88e63
 LicenseConcluded: NOASSERTION
 LicenseInfoInFile: 0BSD
 LicenseInfoInFile: BSD-2-Clause
 LicenseInfoInFile: CC0-1.0
+LicenseInfoInFile: GPL-3.0-or-later
 LicenseInfoInFile: MIT
 LicenseInfoInFile: PSF-2.0
 FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
 
+FileName: ./Makefile
+SPDXID: SPDXRef-d17b2784767cfc781ab1814652d5177e
+FileChecksum: SHA1: b7a7e306f77f84fa9f154da8b76df3b2057d55f1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
 FileName: ./README.md
-SPDXID: SPDXRef-3d8e9cdfd42a2915ac612bc51a91ef45
-FileChecksum: SHA1: 3c0b89affff63146da86b62599fb032fdded9e2d
+SPDXID: SPDXRef-d21c699b7cbe92856c03a1822717978c
+FileChecksum: SHA1: 9051bddf1bdc82777240249697847e2a64e82ca0
 LicenseConcluded: NOASSERTION
 LicenseInfoInFile: AGPL-3.0-or-later
 FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
 SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
 
 FileName: ./depend-info.txt
-SPDXID: SPDXRef-1d3dfc836f7ece2122c7df3e14d6baf2
-FileChecksum: SHA1: 6b43c744cf5cd7fc9a9bad2aba66253a685975fa
+SPDXID: SPDXRef-5150f4fca3b333a29ef72cdea6532860
+FileChecksum: SHA1: 84d5d3d6208ad2e7dd5a948b75b8063e844e24d9
 LicenseConcluded: NOASSERTION
 LicenseInfoInFile: CC0-1.0
 FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
 
 FileName: ./dot.py
-SPDXID: SPDXRef-23e1d2342b74d2f89a9b88a6ec589ddb
-FileChecksum: SHA1: 1cea766ad5be5478d79a77447bd5bf1e6d440eb0
+SPDXID: SPDXRef-0279584e425c83d47d4d54ab8328f789
+FileChecksum: SHA1: cbc83d75d5587de564480feb287f5fca72c6c477
 LicenseConcluded: NOASSERTION
 LicenseInfoInFile: AGPL-3.0-or-later
 FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
