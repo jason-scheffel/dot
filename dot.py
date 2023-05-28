@@ -80,7 +80,10 @@ def init(args: argparse.Namespace) -> None:
 
     open(dotfiles_ignore_file_path, "w").close()
 
-    run(["git", "init"]) if not args.no_git_init else None
+    if args.no_git_init:
+        return
+
+    run(["git", "init"])
 
 
 def main(args: argparse.Namespace) -> None:
