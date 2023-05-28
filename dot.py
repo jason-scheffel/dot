@@ -84,6 +84,8 @@ def init(args: argparse.Namespace) -> None:
         return
 
     run(["git", "init"])
+    run(["git", "add", "."])
+    run(["git", "commit", "-m", "[birth-AUTO] initial commit"])
 
 
 def main(args: argparse.Namespace) -> None:
