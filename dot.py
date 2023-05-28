@@ -212,7 +212,10 @@ dot.py remove ~/.xinitrc /foo/bar/dotfiles
 
 dot.py install /foo/bar/dotfiles
 - This will install the dotfiles in /foo/bar/dotfiles to the system.
-"""
+
+{'*'*79}
+* END EXAMPLES                                                                *
+{'*'*79}"""
         print(examples_text)
         exit(0)
 
