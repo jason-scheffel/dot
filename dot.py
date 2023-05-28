@@ -190,6 +190,22 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         help="The path to the dotfiles repo.",
     )
 
+    sub_parser_install.add_argument(
+        "-p",
+        "--progress",
+        action="store_true",
+        help="Show progress bar.",
+        default=True,
+    )
+
+    sub_parser_install.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="Show verbose output.",
+        default=True,
+    )
+
     arguments = parser.parse_args()
 
     if arguments.examples:
