@@ -119,8 +119,52 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         formatter_class=CustomFormatter,
     )
 
-    arguments = parser.parse_args()
+    # show examples
+    parser.add_argument(
+        "-e",
+        "--examples",
+        action="store_true",
+        help="Show examples of how to use this program and exit.",
+        default=False,
+    )
 
+    subparsers = parser.add_subparsers(
+        title="subcommands",
+        description="valid subcommands",
+        help="Do 'dot.py <subcommand> -h' for help on a subcommand.",
+        dest="subcommand",
+        required=True,
+    )
+
+    # 'add' subcommand
+    sub_parser_add = subparsers.add_parser(
+        "add",
+        description="Add a file or folder to the dotfiles repo.",
+        help="Add a file or folder to the dotfiles repo.",
+        formatter_class=CustomFormatter,
+    )
+
+    sub_parser_add.add_argument(
+        "file_or_folder",
+        type=str,
+        help="The file or folder to add to the dotfiles repo.",
+    )
+
+    # 'remove' subcommand
+    sub_parser_remove = subparsers.add_parser(
+        "remove",
+        description="Remove a file or folder from the dotfiles repo.",
+        help="Remove a file or folder from the dotfiles repo.",
+        formatter_class=CustomFormatter,
+    )
+
+    sub_parser_remove.add_argument(
+        "file_or_folder",
+        type=str,
+        help="The file or folder to remove from the dotfiles repo.",
+    )
+
+    arguments = parser.parse_args()
     return arguments
 
 
