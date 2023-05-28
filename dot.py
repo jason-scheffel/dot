@@ -252,19 +252,17 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     sub_parser_install.add_argument(
-        "-p",
-        "--progress",
+        "--no-progress",
         action="store_true",
         help="Show progress bar.",
-        default=True,
+        default=False,
     )
 
     sub_parser_install.add_argument(
-        "-v",
-        "--verbose",
+        "--quiet",
         action="store_true",
-        help="Show verbose output.",
-        default=True,
+        help="Show no verbose output.",
+        default=False,
     )
 
     # 'sync' subcommand
@@ -282,19 +280,17 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     sub_parser_sync.add_argument(
-        "-p",
-        "--progress",
+        "--no-progress",
         action="store_true",
         help="Show progress bar.",
-        default=True,
+        default=False,
     )
 
     sub_parser_sync.add_argument(
-        "-v",
-        "--verbose",
+        "--quiet",
         action="store_true",
-        help="Show verbose output.",
-        default=True,
+        help="Show no verbose output.",
+        default=False,
     )
 
     # 'init' subcommand
