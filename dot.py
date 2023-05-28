@@ -259,6 +259,12 @@ dot.py remove ~/.xinitrc /foo/bar/dotfiles
 dot.py install /foo/bar/dotfiles
 - This will install the dotfiles in /foo/bar/dotfiles to the system.
 
+dot.py ignore file ~/.config/nvim/plugin/packer_compiled.lua /foo/bar/dotfiles
+- This will, in the dotfiles repo, ignore the above file.
+
+dot.py ignore folder ~/.config/idk/download/images /foo/bar/dotfiles
+- This will, in the dotfiles repo, ignore the above folder.
+
 {'*'*79}
 * END EXAMPLES                                                                *
 {'*'*79}"""
