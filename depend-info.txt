@@ -20,3 +20,7 @@ markdown-it-py:
 Pygments:
   SOURCE CODE = https://github.com/pygments/pygments
   LICENSE = https://spdx.org/licenses/BSD-2-Clause.html
+
+Make:
+  SOURCE CODE = https://git.savannah.gnu.org/cgit/make.git
+  LICENSE = https://spdx.org/licenses/GPL-3.0-or-later.html
