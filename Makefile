@@ -15,12 +15,13 @@
 # You should have received a copy of the GNU Affero General Public License along
 # with this program. If not, see <http://www.gnu.org/licenses/>.
 
-install: dot.py
-	cp dot.py /usr/bin/dot.py
-	echo '#!/usr/bin/env python' | cat - dot.py > /usr/bin/dot.py
-	sudo chmod +x /usr/bin/dot.py
+install:
+	cp dot.py /usr/bin/dot
+	chmod +x /usr/bin/dot
+	echo '#!/usr/bin/env python' | cat - dot.py > /usr/bin/dot
+	sudo chmod +x /usr/bin/dot
 
 uninstall:
-	sudo rm /usr/bin/dot.py
+	sudo rm /usr/bin/dot
 
 .PHONY: install uninstall
