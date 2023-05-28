@@ -62,7 +62,18 @@ def remove_folder(folder_path: str) -> None:
 
 
 def main(args: argparse.Namespace) -> None:
-    pass
+    if args.add:
+        pass
+    elif args.remove:
+        pass
+    elif args.ignore:
+        pass
+    elif args.install:
+        pass
+    elif args.sync:
+        pass
+    elif args.init:
+        pass
 
 
 def assert_dependencies(args: argparse.Namespace) -> None:
