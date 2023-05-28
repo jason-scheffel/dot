@@ -85,17 +85,17 @@ def init(args: argparse.Namespace) -> None:
 
 
 def main(args: argparse.Namespace) -> None:
-    if args.add:
+    if args.subcommand == "add":
         add(args)
-    elif args.remove:
+    elif args.subcommand == "remove":
         remove(args)
-    elif args.ignore:
+    elif args.subcommand == "ignore":
         ignore(args)
-    elif args.install:
+    elif args.subcommand == "install":
         install(args)
-    elif args.sync:
+    elif args.subcommand == "sync":
         sync(args)
-    elif args.init:
+    elif args.subcommand == "init":
         init(args)
 
 
