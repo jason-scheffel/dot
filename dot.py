@@ -195,6 +195,38 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
         default=False,
     )
 
+    # 'remove' subcommand
+    sub_parser_remove = subparsers.add_parser(
+        "remove",
+        description="Remove a file or folder from the dotfiles repo.",
+        help="Remove a file or folder from the dotfiles repo.",
+        formatter_class=CustomFormatter,
+    )
+
+    sub_parser_remove.add_argument(
+        "type",
+        choices=["file", "folder"],
+        help="The type of file to add.",
+    )
+
+    sub_parser_remove.add_argument(
+        "file_or_folder",
+        type=str,
+        help="The file or folder to remove from the dotfiles repo.",
+    )
+
+    sub_parser_remove.add_argument(
+        "dotfiles_repo",
+        type=str,
+        help="The path to the dotfiles repo.",
+    )
+    sub_parser_remove.add_argument(
+        "--no-git",
+        action="store_true",
+        help="Do not run git commands.",
+        default=False,
+    )
+
     # 'ignore' subcommand
     sub_parser_ignore = subparsers.add_parser(
         "ignore",
@@ -228,38 +260,6 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
     )
 
     sub_parser_ignore.add_argument(
-        "--no-git",
-        action="store_true",
-        help="Do not run git commands.",
-        default=False,
-    )
-
-    # 'remove' subcommand
-    sub_parser_remove = subparsers.add_parser(
-        "remove",
-        description="Remove a file or folder from the dotfiles repo.",
-        help="Remove a file or folder from the dotfiles repo.",
-        formatter_class=CustomFormatter,
-    )
-
-    sub_parser_remove.add_argument(
-        "type",
-        choices=["file", "folder"],
-        help="The type of file to add.",
-    )
-
-    sub_parser_remove.add_argument(
-        "file_or_folder",
-        type=str,
-        help="The file or folder to remove from the dotfiles repo.",
-    )
-
-    sub_parser_remove.add_argument(
-        "dotfiles_repo",
-        type=str,
-        help="The path to the dotfiles repo.",
-    )
-    sub_parser_remove.add_argument(
         "--no-git",
         action="store_true",
         help="Do not run git commands.",
