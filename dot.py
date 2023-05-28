@@ -16,13 +16,11 @@ You should have received a copy of the GNU Affero General Public License along
 with this program. If not, see <http://www.gnu.org/licenses/>.
 """
 
-import csv
+import argparse
 import os
 import shutil
 import subprocess
 import time
-
-import argparse
 
 
 def run(cmd: str) -> dict[str, str | int]:
