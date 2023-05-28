@@ -2,18 +2,18 @@ SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: dot
-DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-08d87d72-d436-449b-adc4-6bf1e6cb2e5d
+DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-a496f5fa-22cb-4161-96c8-6ddbe2d059d3
 Creator: Person: Anonymous ()
 Creator: Organization: Anonymous ()
 Creator: Tool: reuse-1.0.0
-Created: 2023-05-28T23:47:19Z
+Created: 2023-05-28T23:50:01Z
 CreatorComment: <text>This document was created automatically using available reuse information consistent with REUSE.</text>
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-76fa752d5771e237a9c816adade8e4be
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-e799e297d1653d68d9eeb8421e17727a
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-cb8807efe189f81b478099443f9edae3
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-41edd2f5ac504ef1dec3491d409b9985
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-fa82f4fde5a61973b6c529302c293b25
-Relationship: SPDXRef-DOCUMENT describes SPDXRef-4314b7a4d312097c9a294ac1bb18773b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ce95f2af3f4158252d0b4b370ec5894d
 
 FileName: ./.IGNORE_THIS_FILE_REUSE_LICENSE_CHEAT.txt
 SPDXID: SPDXRef-76fa752d5771e237a9c816adade8e4be
@@ -57,8 +57,8 @@ LicenseInfoInFile: CC0-1.0
 FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
 
 FileName: ./dot.py
-SPDXID: SPDXRef-4314b7a4d312097c9a294ac1bb18773b
-FileChecksum: SHA1: ecaa81b93ce03e83252a33372f98cbb96e2bdbc0
+SPDXID: SPDXRef-ce95f2af3f4158252d0b4b370ec5894d
+FileChecksum: SHA1: b4cecdfa1c08d9eb28e4a32b272d1607715de035
 LicenseConcluded: NOASSERTION
 LicenseInfoInFile: AGPL-3.0-or-later
 FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
