@@ -1,0 +1,12 @@
+usage: dot.py init [-h] [-s SIGNATURE] [--no-git-init] dotfiles_repo
+
+Initialize the dotfiles repo.
+
+positional arguments:
+  dotfiles_repo         The path to the dotfiles repo.
+
+options:
+  -h, --help            show this help message and exit
+  -s SIGNATURE, --signature SIGNATURE
+                        The signature to use for git commits. (default: None)
+  --no-git-init         Do not initialize a git repo. (default: False)

@@ -1,0 +1,55 @@
+usage: dot.py [-h] [-e] [-H] {add,remove,ignore,install,sync,init} ...
+
+A tool for managing dotfiles.
+
+options:
+  -h, --help            show this help message and exit
+  -e, --examples        show examples of how to use this program and exit
+                        (default: False)
+  -H, --no-epilog       show help without epilog (default: False)
+
+subcommands:
+  valid subcommands
+
+  {add,remove,ignore,install,sync,init}
+                        Do 'dot.py <subcommand> -h' for help on a subcommand.
+    add                 Add a file or folder to the dotfiles repo.
+    remove              Remove a file or folder from the dotfiles repo.
+    ignore              Add a file or folder to the ignore list.
+    install             Install the dotfiles repo.
+    sync                Sync the dotfiles repo.
+    init                Initialize the dotfiles repo.
+
+-------------------------------------------------------------------------------
+Please the following messgae. I understand, however, that you may not wish to
+keep seeing the message. If that is the case, you may run this program with the
+'-H' flag to hide the message. '-H' is the same as '-h' except that it hides
+the message.
+
+This program requires, or optionally 'requires' other software.
+
+Note, this does not mean that this program can not be used without such
+software; for instance, this program may include a Makefile to install itself,
+but you need not be forced to use it.
+
+Such software is listed in the README.md file that accompanies this program;
+additionally, a copy of the said file can be found at:
+<https://git.sr.ht/~jason-scheffel/dot>.
+
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com>
+SPDX-License-Identifier: AGPL-3.0-or-later
+
+Copyright (C) 2023 Jason Scheffel
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your option) any
+later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE. See the GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License along
+with this program. If not, see <http://www.gnu.org/licenses/>.
+    

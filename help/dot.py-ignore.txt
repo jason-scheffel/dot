@@ -1,0 +1,14 @@
+usage: dot.py ignore [-h] [--no-git]
+                     {add,remove} {file,folder} file_or_folder dotfiles_repo
+
+Add a file or folder to the ignore list.
+
+positional arguments:
+  {add,remove}    The action to perform.
+  {file,folder}   The type of file to ignore.
+  file_or_folder  The file or folder to ignore.
+  dotfiles_repo   The path to the dotfiles repo.
+
+options:
+  -h, --help      show this help message and exit
+  --no-git        Do not run git commands. (default: False)

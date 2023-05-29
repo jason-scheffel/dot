@@ -1,0 +1,12 @@
+usage: dot.py remove [-h] [--no-git] {file,folder} file_or_folder dotfiles_repo
+
+Remove a file or folder from the dotfiles repo.
+
+positional arguments:
+  {file,folder}   The type of file to add.
+  file_or_folder  The file or folder to remove from the dotfiles repo.
+  dotfiles_repo   The path to the dotfiles repo.
+
+options:
+  -h, --help      show this help message and exit
+  --no-git        Do not run git commands. (default: False)
