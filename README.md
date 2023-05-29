@@ -61,6 +61,7 @@ The only guarantee that I can make is that dot, probably, works on my computer.
 1. [License](#license)
 1. [Dependencies](#dependencies)
 1. [Acknowledgements](#acknowledgements)
+1. [Usage](#usage)
 
 <!-- NOTICE-->
 
@@ -150,3 +151,14 @@ The `~/LICENSES` directory and the `~/reuse.spdx` file were generated using
 <a href="#TOP">back to top</a>
 
 <!-- blank -->
+
+<!-- USAGE -->
+
+## Usage
+
+For usage, run `dot.py -h`
+
+If you dont want to clone this repo and run that, you can view the outputs in
+the `~/help` directory or click the below links to bring you to that directory:
+
+[`dot.py -h`](/help/dot.py.txt)
