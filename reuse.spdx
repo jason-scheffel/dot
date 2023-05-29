@@ -2,18 +2,25 @@ SPDXVersion: SPDX-2.1
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: dot
-DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-a496f5fa-22cb-4161-96c8-6ddbe2d059d3
+DocumentNamespace: http://spdx.org/spdxdocs/spdx-v2.1-e0e22ccf-fb72-416e-a194-715398ae9948
 Creator: Person: Anonymous ()
 Creator: Organization: Anonymous ()
 Creator: Tool: reuse-1.0.0
-Created: 2023-05-28T23:50:01Z
+Created: 2023-05-29T01:18:37Z
 CreatorComment: <text>This document was created automatically using available reuse information consistent with REUSE.</text>
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-76fa752d5771e237a9c816adade8e4be
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-e799e297d1653d68d9eeb8421e17727a
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-cb8807efe189f81b478099443f9edae3
-Relationship: SPDXRef-DOCUMENT describes SPDXRef-41edd2f5ac504ef1dec3491d409b9985
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c8ac76cc4be7134960734374249f94aa
 Relationship: SPDXRef-DOCUMENT describes SPDXRef-fa82f4fde5a61973b6c529302c293b25
-Relationship: SPDXRef-DOCUMENT describes SPDXRef-ce95f2af3f4158252d0b4b370ec5894d
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b74873842e91cbbdacfc7e8faf43ee1b
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-70caa18f59fe80e9e25e12f3a7b35b8a
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-ededf3cbe77769cf383ad71be05b89c5
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-3bcb0f99290065ad8fbd5d8bac108dd9
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-c757da539e9b35e0168b5fdfb3df55f4
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-244d3dc2b0ff154e9afd8a606d11263f
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-b4ec32432893609847b74aa2e38812b3
+Relationship: SPDXRef-DOCUMENT describes SPDXRef-06e2e1382d6655d55456015e5aeed159
 
 FileName: ./.IGNORE_THIS_FILE_REUSE_LICENSE_CHEAT.txt
 SPDXID: SPDXRef-76fa752d5771e237a9c816adade8e4be
@@ -42,8 +49,8 @@ FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
 SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
 
 FileName: ./README.md
-SPDXID: SPDXRef-41edd2f5ac504ef1dec3491d409b9985
-FileChecksum: SHA1: 013d17f2a602dbbd9511f09a9db1734a42c36297
+SPDXID: SPDXRef-c8ac76cc4be7134960734374249f94aa
+FileChecksum: SHA1: 1e64470f1b47833f0b4665eb56618cc814388022
 LicenseConcluded: NOASSERTION
 LicenseInfoInFile: AGPL-3.0-or-later
 FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
@@ -57,8 +64,64 @@ LicenseInfoInFile: CC0-1.0
 FileCopyrightText: <text>SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
 
 FileName: ./dot.py
-SPDXID: SPDXRef-ce95f2af3f4158252d0b4b370ec5894d
-FileChecksum: SHA1: b4cecdfa1c08d9eb28e4a32b272d1607715de035
+SPDXID: SPDXRef-b74873842e91cbbdacfc7e8faf43ee1b
+FileChecksum: SHA1: 8c4d4e7db9a201e5d598eb84e84e13057c8f1fd9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./help/dot.py-add.txt
+SPDXID: SPDXRef-70caa18f59fe80e9e25e12f3a7b35b8a
+FileChecksum: SHA1: e5541e0af79e74509aef27c4f9f37ccb61ba9d5b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./help/dot.py-ignore.txt
+SPDXID: SPDXRef-ededf3cbe77769cf383ad71be05b89c5
+FileChecksum: SHA1: 7b1b4d61b6c4b220fc78d328b0c0fb8e1a068c50
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./help/dot.py-init.txt
+SPDXID: SPDXRef-3bcb0f99290065ad8fbd5d8bac108dd9
+FileChecksum: SHA1: dcd63c0ee9832eddee78908bc4ec625248340877
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./help/dot.py-install.txt
+SPDXID: SPDXRef-c757da539e9b35e0168b5fdfb3df55f4
+FileChecksum: SHA1: 36955449f5caaa558865419fee08bf3d9497c6b0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./help/dot.py-remove.txt
+SPDXID: SPDXRef-244d3dc2b0ff154e9afd8a606d11263f
+FileChecksum: SHA1: 9589ce41024d9d8eeaf6af80db1deb5823ff5b49
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./help/dot.py-sync.txt
+SPDXID: SPDXRef-b4ec32432893609847b74aa2e38812b3
+FileChecksum: SHA1: 372705219aafa9da3ebbceb22dd2203aa3302271
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: AGPL-3.0-or-later
+FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
+SPDX-FileCopyrightText: 2023 Jason Scheffel <contact@jasonscheffel.com></text>
+
+FileName: ./help/dot.py.txt
+SPDXID: SPDXRef-06e2e1382d6655d55456015e5aeed159
+FileChecksum: SHA1: db5b66dcf462a0ac0d6273f41a7301d8299c8952
 LicenseConcluded: NOASSERTION
 LicenseInfoInFile: AGPL-3.0-or-later
 FileCopyrightText: <text>Copyright (C) 2023 Jason Scheffel
