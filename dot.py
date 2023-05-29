@@ -79,6 +79,15 @@ def init(args: argparse.Namespace) -> None:
 
     open(dot_conf_file_path, "w").close()
 
+    with open(dot_conf_file_path, "w") as dot_conf_file:
+        json.dump(
+            {
+                "dotfiles_signature": args.signature,
+            },
+            dot_conf_file,
+            indent=4,
+        )
+
     if args.no_git_init:
         return
 
