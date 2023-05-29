@@ -163,14 +163,14 @@ the `~/help` directory or click the below links to bring you to that directory:
 
 [`dot.py -h`](/help/dot.py.txt)
 
-[`dot.py add -h`](/help/dot-add.py.txt)
+[`dot.py add -h`](/help/dot.py-add.txt)
 
-[`dot.py remove -h`](/help/dot-remove.py.txt)
+[`dot.py remove -h`](/help/dot.py-remove.txt)
 
-[`dot.py ignore -h`](/help/dot-ignore.py.txt)
+[`dot.py ignore -h`](/help/dot.py-ignore.txt)
 
-[`dot.py install -h`](/help/dot-install.py.txt)
+[`dot.py install -h`](/help/dot.py-install.txt)
 
-[`dot.py sync -h`](/help/dot-sync.py.txt)
+[`dot.py sync -h`](/help/dot.py-sync.txt)
 
-[`dot.py init -h`](/help/dot-init.py.txt)
+[`dot.py init -h`](/help/dot.py-init.txt)
