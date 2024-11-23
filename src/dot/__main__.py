@@ -1,9 +1,4 @@
-def hello():
-    print("Hello, World!")
-
-
-def main():
-    hello()
+from dot.main import main
 
 if __name__ == "__main__":
     raise SystemExit(main())
