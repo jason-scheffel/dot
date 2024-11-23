@@ -3,6 +3,7 @@ name = "dot"
 version = "0.1.0"
 description = ""
 authors = ["Jason Scheffel <contact@jasonscheffel.com>"]
+packages = [{ include = "dot", from = "src" }]
 license = "BSD-3-Clause"
 readme = "README.md"
 
@@ -12,3 +13,6 @@ python = "^3.12"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+dot = 'dot.__main__:main'
